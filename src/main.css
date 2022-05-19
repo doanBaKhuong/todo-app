@@ -1,0 +1,137 @@
+:root{
+    --dark: #374151;
+    --darker: #1F2937;
+    --darkest:#111828;
+    --gray: #6B7280;
+    --light: #EEE;
+    --pink: #EC4899;
+    --purple: #8B5CF6;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    font-family: 'Fira', sans-serif;
+}
+
+body {
+    display: block;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: var(--dark);
+    color: #FFF;
+}
+
+ul{
+    list-style: none;
+}
+
+.todoList {
+    padding: 2rem 1rem;
+    max-width: 800px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.todoList h1 {
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 300;
+    color: var(--gray);
+    margin-bottom: 1rem;
+}
+
+.add-element {
+    display: flex;  
+    margin-bottom: 1rem;
+}
+
+#btn {
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+input, button{
+    appearance: none;
+    border: none;
+    outline: none;
+    background: none;
+}
+
+#todo {
+    flex: 1 1 0%;
+    background-color: var(--darker);
+    padding: 1rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: var(--light);
+    font-size: 1.25rem;  
+}
+
+#todo::placeholder {
+    color: var(--gray);
+}
+
+#btn {
+    color: var(--pink);
+    font-size: 1.25rem;
+    font-weight: 700;
+    background-image: linear-gradient(to right, var(--pink), var(--purple));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+#btn:hover {
+    opacity: 0.8;
+}
+
+#btn:active {
+    opacity: 0.6;
+}
+
+.element-list {
+    padding: 1rem;
+    padding-left: 0;
+}
+
+
+
+#tasks .task .content {
+    flex: 1 1 0%;
+    display: flex;
+}
+
+ul {
+    padding: 0;
+    
+}
+
+li {
+    font-size: 1rem;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--darkest);
+    border-radius: 1rem;
+}
+
+li button{
+    color: crimson;
+    font-size: 1.25rem;
+    font-weight: 700;
+    float: right;
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+li button:hover {
+    opacity: 0.6;
+}
+
+
+
+
+
